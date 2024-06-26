@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+button {
+  width: 250px;
+  height: 80px;
+  font-size: 35px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(232, 97, 124), 0 0 25px rgb(232, 97, 124),
+    0 0 5px rgb(232, 97, 124) inset;
+}
+
+button:hover {
+  /* background: #053885; */
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0px);
+  background-color: (linear-gradient(to bottom, #03204c, #053885));
+}
+
+.boton-clic {
+  background-color: #1b1b32;
+}
+
+.boton-reiniciar {
+  background-color: #1b1b32;
+}
+
+/* .boton-reiniciar:hover {
+  background-color: #650f37;
+}
+ */
