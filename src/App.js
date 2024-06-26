@@ -1,7 +1,6 @@
 import "./App.css";
 import Boton from "./components/Boton";
 import Contador from "./components/Contador";
-import asteroid from "./imgs/asteroid.png";
 import { useState } from "react";
 
 function App() {
@@ -10,6 +9,7 @@ function App() {
   const manejarClic = () => {
     setNumClics((prevNumClics) => prevNumClics + 1);
 
+    // Función que toma el contenedor de la pantalla y le hace el efecto de salto
     const contador = document.querySelector("#contador-contenedor");
     if (contador && !contador.classList.contains("animar")) {
       contador.classList.add("animar");
@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <div className="contenedor-principal">
         <Contador numClics={numClics} />
-        <Boton texto="Clic" esBotonDeClic={true} manejarClic={manejarClic} />
+        <Boton texto="Click" esBotonDeClic={true} manejarClic={manejarClic} />
         <Boton
           texto="Reiniciar"
           esBotonDeClic={false}
